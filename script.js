@@ -22,6 +22,7 @@ function setupModeButtons() {
         modeButtons[i].addEventListener("click", function () {
             modeButtons[0].classList.remove("selected");
             modeButtons[1].classList.remove("selected");
+            modeButtons[2].classList.remove("selected");
             this.classList.add("selected");
 
 
@@ -76,7 +77,7 @@ function reset() {
             squares[i].style.display = "none";
         }
     }
-    h1.style.backgroundColor = "steelblue";
+    h1.style.backgroundColor = "#41B3A3";
 }
 
 resetButton.addEventListener("click", function() {
