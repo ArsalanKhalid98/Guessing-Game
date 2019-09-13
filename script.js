@@ -1,4 +1,4 @@
-var numSquares = 6;
+var numSquares = 9;
 var colors = [];
 var pickedColor;
 var squares = document.querySelectorAll(".square");
@@ -27,8 +27,11 @@ function setupModeButtons() {
 
             if (this.textContent === "Easy") {
                 numSquares = 3;
-            } else {
+            } else if (this.textContent === "Hard") {
                 numSquares = 6;
+            }
+            else {
+                numSquares = 9;
             }
             reset();
         });
